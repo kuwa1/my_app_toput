@@ -1,0 +1,30 @@
+version: '2'
+services:
+  # DB用のコンテナ
+  db:
+    image: postgres
+    ports:
+      - "5432"
+    # データをホスト側で保持し、関連付けることで永続化
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+  # Web用のコンテナ
+  web:
+    # DockerFileの配置フォルダ
+    build: .
+    # コンテナ起動時に実行されるコマンド
+    command: bundle exec rails s -p 3000 -b 0.0.0.0
+    ports:
+      - "3000:3000"
+    # dbとwebを関連付け
+    links:
+      - db
+    # ローカルのルートディレクトリをコンテナ上の作業ディレクトリと関連付け
+    volumes:
+      - ./:/docker_sample_app
+    # 環境変数
+    environment:
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD:
+      DATABASE_PORT: 5432
+      DATABASE_HOST: db
