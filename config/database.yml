@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: my_app_toput_production
-  username: my_app_toput
-  password: <%= ENV['MY_APP_TOPUT_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
