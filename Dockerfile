@@ -1,5 +1,5 @@
 # ベースイメージの設定
-FROM ruby:2.4.3
+FROM ruby:2.5.1
 # 環境変数の設定
 ENV WORK_DIR /work
 ENV APP_ROOT /docker_sample_app

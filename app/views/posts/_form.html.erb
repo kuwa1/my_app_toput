@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :article %>
-    <%= form.text_area :article %>
+    <%= form.label :アウトプット内容 %>
+    <%= form.text_area :article, size: "40x15" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "投稿" %>
   </div>
 <% end %>
