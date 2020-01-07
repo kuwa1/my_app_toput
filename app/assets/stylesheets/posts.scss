@@ -5,6 +5,10 @@ table {
   margin: 15px auto;
 }
 
+body {
+  text-align: center;
+}
+
 h1 {
   background-color: blue;
   color: white;
@@ -18,3 +22,8 @@ th {
   font-size: 20px;
   height: 50px;
 }
+
+td.output {
+  width: 400px;
+}
+
