@@ -12,7 +12,7 @@ Twitterと連携することでアウトプットの内容をそのままTwitter
 学習した内容を共有してモチベーションの向上も図れる。<br>
 また学習内容を振り返る時に見やすくなっている。
 
-## Technology
+## :computer:Technology
 Ruby,　Rails, HTML, CSS
 
 ## Environment
