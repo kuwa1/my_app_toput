@@ -1,24 +1,28 @@
-# README
+## :octocat:アプリ名：To Put
+<p align="center">
+<img src="https://i.gyazo.com/34fc732e342b0a0a7421a0afc7ab4e89.png" width=70%>  
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🌐 App URL
+http://18.178.39.51/
 
-Things you may want to cover:
+## :speech_balloon:Option
+投稿、編集、削除、Twitterに投稿
 
-* Ruby version
+## :bulb:Characteristic
+学習したことをアウトプットして学習効率を向上させるアプリ<br>
+Twitterと連携することでアウトプットの内容をそのままTwitterに投稿でき、<br>
+学習した内容を共有してモチベーションの向上も図れる。<br>
+また学習内容を振り返る時に見やすくなっている。
 
-* System dependencies
+## :computer:Technology
+Ruby,　Rails, HTML, CSS
 
-* Configuration
+## :earth_asia:Environment
+Docker, github, AWS
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
